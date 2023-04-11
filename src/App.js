@@ -13,14 +13,19 @@ import LeftBar from "./components/leftBar/LeftBar.jsx";
 import RightBar from "./components/rightBar/RightBar.jsx";
 import Home from "./pages/home/Home.jsx"
 import Profile from "./pages/profile/Profile"
+import { DarkMode } from "@mui/icons-material";
+import { useContext } from "react";
+import { DarkModeContext } from "./context/darkModelContext";
+import { AuthContext } from "./context/authContext";
 
 
 function App() {
+  const {currentUser} = useContext(AuthContext);
+  const { darkMode } = useContext(DarkModeContext);
 
-  const currentUser = true;
 
   const Layout = ()=> {
-    return(<div>
+    return(<div className={`theme-${darkMode ? "dark": "light"}`}>
       <Navbar/>
       <div style={{display:"flex"}}>
         <LeftBar/>

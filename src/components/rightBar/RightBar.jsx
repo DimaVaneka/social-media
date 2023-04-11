@@ -34,7 +34,7 @@ const RightBar = () => {
               <img src="https://images.pexels.com/photos/5935239/pexels-photo-5935239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
               <p>
                 <span>Jane Doe</span> changed their cover picture
-                </p>
+              </p>
             </div>
             <span>1 min ago</span>
           </div>
@@ -44,7 +44,7 @@ const RightBar = () => {
               <img src="https://images.pexels.com/photos/5935239/pexels-photo-5935239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
               <p>
                 <span>Jane Doe</span> changed their cover picture
-                </p>
+              </p>
             </div>
             <span>1 min ago</span>
           </div>
@@ -53,7 +53,7 @@ const RightBar = () => {
               <img src="https://images.pexels.com/photos/5935239/pexels-photo-5935239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
               <p>
                 <span>Jane Doe</span> changed their cover picture
-                </p>
+              </p>
             </div>
             <span>1 min ago</span>
           </div>
@@ -62,7 +62,7 @@ const RightBar = () => {
               <img src="https://images.pexels.com/photos/5935239/pexels-photo-5935239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
               <p>
                 <span>Jane Doe</span> changed their cover picture
-                </p>
+              </p>
             </div>
             <span>1 min ago</span>
           </div>
@@ -72,64 +72,64 @@ const RightBar = () => {
           <div className="user">
             <div className="userInfo">
               <img src="https://images.pexels.com/photos/5935239/pexels-photo-5935239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-              <div className="online"/>
+              <div className="online" />
               <span>
                 Jane Doe
-                </span>
+              </span>
             </div>
           </div>
           <div className="user">
             <div className="userInfo">
               <img src="https://images.pexels.com/photos/5935239/pexels-photo-5935239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-              <div className="online"/>
+              <div className="online" />
               <span>
                 Jane Doe
-                </span>
+              </span>
             </div>
           </div>
           <div className="user">
             <div className="userInfo">
               <img src="https://images.pexels.com/photos/5935239/pexels-photo-5935239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-              <div className="online"/>
+              <div className="online" />
               <span>
                 Jane Doe
-                </span>
+              </span>
             </div>
           </div>
           <div className="user">
             <div className="userInfo">
               <img src="https://images.pexels.com/photos/5935239/pexels-photo-5935239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-              <div className="online"/>
+              <div className="online" />
               <span>
                 Jane Doe
-                </span>
+              </span>
             </div>
           </div>
           <div className="user">
             <div className="userInfo">
               <img src="https://images.pexels.com/photos/5935239/pexels-photo-5935239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-              <div className="online"/>
+              <div className="online" />
               <span>
                 Jane Doe
-                </span>
+              </span>
             </div>
           </div>
           <div className="user">
             <div className="userInfo">
               <img src="https://images.pexels.com/photos/5935239/pexels-photo-5935239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-              <div className="online"/>
+              <div className="online" />
               <span>
                 Jane Doe
-                </span>
+              </span>
             </div>
           </div>
           <div className="user">
             <div className="userInfo">
               <img src="https://images.pexels.com/photos/5935239/pexels-photo-5935239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-              <div className="online"/>
+              <div className="online" />
               <span>
                 Jane Doe
-                </span>
+              </span>
             </div>
           </div>
         </div>
