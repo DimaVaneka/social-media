@@ -17,35 +17,42 @@ import { DarkMode } from "@mui/icons-material";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModelContext";
 import { AuthContext } from "./context/authContext";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
 
 
 function App() {
-  const {currentUser} = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
+
   const { darkMode } = useContext(DarkModeContext);
 
+  const queryClient = new QueryClient();
 
-  const Layout = ()=> {
-    return(<div className={`theme-${darkMode ? "dark": "light"}`}>
-      <Navbar/>
-      <div style={{display:"flex"}}>
-        <LeftBar/>
-        <div style={{flex: 6}}>
-        <Outlet/>
+  const Layout = () => {
+    return (
+      <QueryClientProvider client= {queryClient}>
+        <div className={`theme-${darkMode ? "dark" : "light"}`}>
+          <Navbar />
+          <div style={{ display: "flex" }}>
+            <LeftBar />
+            <div style={{ flex: 6 }}>
+              <Outlet />
+            </div>
+            <RightBar />
+          </div>
         </div>
-        <RightBar/>
-      </div>
-    </div>
-  );
-};
+      </QueryClientProvider>
+    );
+  };
 
-  const ProtectedRoute = ({children}) =>{
-    if(!currentUser){
-      return <Navigate to="/login"/>
+  const ProtectedRoute = ({ children }) => {
+    if (!currentUser) {
+      return <Navigate to="/login" />
     }
     return children
   }
 
-  
+
   const router = createBrowserRouter([
     {
       path: "/",

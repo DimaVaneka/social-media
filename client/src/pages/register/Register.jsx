@@ -20,17 +20,18 @@ const Register = () => {
         setInputs(prev => ({ ...prev, [e.target.name]: e.target.value }))
     };
 
-    const handleClick = async e => {
+    const handleClick = async (e) => {
         e.preventDefault();
 
         try {
-            await axios.post("http://localhost:8800/api/auth/register", inputs)
+            await axios.post("http://localhost:8800/api/auth/register", inputs);
+            alert("User has been created")
         } catch (err) {
             setErr(err.response.data);
         }
     }
 
-    console.log(err);
+    console.log(inputs);
     return (
         <div className="Register">
             <div className="card">
