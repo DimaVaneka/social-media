@@ -1,0 +1,118 @@
+@import "../../style.scss";
+
+
+.post {
+    @include themify($themes) {
+        -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        border-radius: 20px;
+        background-color: themed("bg");
+        color: themed("textColor");
+
+        .container {
+            padding: 20px;
+
+            .user {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+
+                .userInfo {
+                    display: flex;
+                    gap: 10px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+
+                    }
+
+                    .details {
+                        display: flex;
+                        flex-direction: column;
+
+                        .name {
+                            font-weight: 500;
+                        }
+
+                        .date {
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .confirm {
+                    position: absolute;
+                    font-size: large;
+                    font-weight: bold;
+                    top: 25px;
+                    right: 0;
+
+                    .buttons {
+                        .confirmBtn {
+                            border: none;
+                            background-color: #f0544f;
+                            padding: 5px;
+                            color: white;
+                            cursor: pointer;
+                            margin-right: 60px;
+                            border-radius: 3px;
+
+                        }
+
+                        .cancelBtn {
+                            border: none;
+                            padding: 5px;
+                            color: white;
+                            cursor: pointer;
+                            background-color: #5271ff;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    top: 30px;
+                    right: 0;
+                    border: none;
+                    background-color: #f0544f;
+                    padding: 5px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+
+            .content {
+                margin: 20px 0px;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    max-height: 600px;
+                    margin-top: 20px;
+                }
+            }
+
+            .info {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+}
